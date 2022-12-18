@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:rivedemo/view/component/widgets/animated_button.dart';
 
 class SignInForm extends StatelessWidget {
   const SignInForm({

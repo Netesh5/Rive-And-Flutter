@@ -76,7 +76,10 @@ class _AuthScreenState extends State<AuthScreen> {
   }
 }
 
-Future<Object?> Dialogpannel(BuildContext context) {
+Future<Object?> Dialogpannel(
+  BuildContext context,
+) {
+  //Gesture().btnPressed = false;
   return showGeneralDialog(
       barrierDismissible: true,
       barrierLabel: "Sign In",
@@ -164,7 +167,7 @@ Future<Object?> Dialogpannel(BuildContext context) {
                       bottom: -50,
                       child: GestureDetector(
                         onTap: () {
-                          Gesture.shouldAbsorb = false;
+                          Gesture().btnPressed = false;
                         },
                         child: const CircleAvatar(
                           radius: 20,

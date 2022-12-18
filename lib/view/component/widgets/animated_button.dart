@@ -4,7 +4,7 @@ import 'package:rive/rive.dart';
 import 'package:rivedemo/view/screens/auth_screen.dart';
 
 class Gesture {
-  static bool shouldAbsorb = false;
+  bool btnPressed = false;
 }
 
 class AnimatedBtn extends StatefulWidget {
@@ -20,22 +20,25 @@ class AnimatedBtn extends StatefulWidget {
 }
 
 class _AnimatedBtnState extends State<AnimatedBtn> {
-  bool btnPressed = false;
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: btnPressed
-          ? null
-          : () {
+      onDoubleTap: null,
+      onTap: Gesture().btnPressed == false
+          ? () {
+              Gesture().btnPressed = true;
               widget.controller.isActive = true;
               Future.delayed(const Duration(milliseconds: 800), () {
-                Dialogpannel(context);
                 setState(() {
                   isLoginBtnPressed = true;
-                  btnPressed = true;
                 });
+
+                Dialogpannel(
+                  context,
+                );
               });
-            },
+            }
+          : null,
       child: SizedBox(
         height: 60,
         width: 260,
