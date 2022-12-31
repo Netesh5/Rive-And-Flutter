@@ -1,16 +1,7 @@
-# rivedemo
+# Rivedemo
 
-A new Flutter project.
+## This is the demo of using Rive and Flutter for animations
 
-## Getting Started
+* Login Screen
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+  ![Rive and Flutter](https://user-images.githubusercontent.com/48326144/210153423-ea7753dd-3aec-4fb3-9398-f2dac402a6bb.gif)
