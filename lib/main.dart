@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:rivedemo/view/screens/auth_screen.dart';
-import 'package:rivedemo/view/screens/home_screen.dart';
 
 void main() {
   runApp(const MyApp());

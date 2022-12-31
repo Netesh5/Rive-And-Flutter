@@ -1,5 +1,5 @@
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
+
 import 'package:rive/rive.dart';
 import 'package:rivedemo/view/screens/auth_screen.dart';
 
@@ -32,7 +32,6 @@ class _AnimatedBtnState extends State<AnimatedBtn> {
                 setState(() {
                   isLoginBtnPressed = true;
                 });
-
                 Dialogpannel(
                   context,
                 );
